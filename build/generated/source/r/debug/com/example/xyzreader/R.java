@@ -2194,7 +2194,7 @@ containing a value of this type.
         public static final int exitUntilCollapsed=0x7f0d0016;
         public static final int expand_activities_button=0x7f0d003e;
         public static final int expanded_menu=0x7f0d004e;
-        public static final int fab=0x7f0d006d;
+        public static final int fab=0x7f0d0069;
         public static final int fill=0x7f0d0021;
         public static final int fill_horizontal=0x7f0d0022;
         public static final int fill_vertical=0x7f0d0023;
@@ -2227,7 +2227,7 @@ containing a value of this type.
         public static final int progress_circular=0x7f0d0005;
         public static final int progress_horizontal=0x7f0d0006;
         public static final int radio=0x7f0d0051;
-        public static final int recycler_view=0x7f0d006a;
+        public static final int recycler_view=0x7f0d006b;
         public static final int refresh=0x7f0d0088;
         public static final int right=0x7f0d0025;
         public static final int screen=0x7f0d0036;
@@ -2260,7 +2260,7 @@ containing a value of this type.
         public static final int start=0x7f0d0026;
         public static final int status_bar_latest_event_content=0x7f0d007d;
         public static final int submit_area=0x7f0d0062;
-        public static final int swipe_refresh_layout=0x7f0d0069;
+        public static final int swipe_refresh_layout=0x7f0d006a;
         public static final int tabMode=0x7f0d000c;
         public static final int text=0x7f0d0085;
         public static final int text2=0x7f0d0083;
@@ -2269,8 +2269,8 @@ containing a value of this type.
         public static final int time=0x7f0d0081;
         public static final int title=0x7f0d0043;
         public static final int title_template=0x7f0d0046;
-        public static final int toolbar=0x7f0d006c;
-        public static final int toolbar_container=0x7f0d006b;
+        public static final int toolbar=0x7f0d006d;
+        public static final int toolbar_container=0x7f0d006c;
         public static final int top=0x7f0d0027;
         public static final int topPanel=0x7f0d0045;
         public static final int up=0x7f0d0008;
