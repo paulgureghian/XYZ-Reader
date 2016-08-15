@@ -11,13 +11,13 @@
                     "endOffset": 145
                 },
                 "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-zh-rTW\\values.xml",
+                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 280,
+                        "startOffset": 295,
                         "endColumn": 94,
-                        "endOffset": 370
+                        "endOffset": 385
                     }
                 }
             },
@@ -26,17 +26,17 @@
                     "startLine": 3,
                     "startColumn": 4,
                     "startOffset": 150,
-                    "endColumn": 106,
-                    "endOffset": 252
+                    "endColumn": 92,
+                    "endOffset": 238
                 },
                 "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-zh-rTW\\values.xml",
+                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 375,
-                        "endColumn": 106,
-                        "endOffset": 477
+                        "startOffset": 390,
+                        "endColumn": 92,
+                        "endOffset": 478
                     }
                 }
             },
@@ -44,18 +44,18 @@
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 257,
-                    "endColumn": 122,
-                    "endOffset": 375
+                    "startOffset": 243,
+                    "endColumn": 99,
+                    "endOffset": 338
                 },
                 "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-zh-rTW\\values.xml",
+                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 482,
-                        "endColumn": 122,
-                        "endOffset": 600
+                        "startOffset": 483,
+                        "endColumn": 99,
+                        "endOffset": 578
                     }
                 }
             },
@@ -63,18 +63,18 @@
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 380,
-                    "endColumn": 92,
-                    "endOffset": 468
+                    "startOffset": 343,
+                    "endColumn": 81,
+                    "endOffset": 420
                 },
                 "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-zh-rTW\\values.xml",
+                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 605,
-                        "endColumn": 92,
-                        "endOffset": 693
+                        "startOffset": 583,
+                        "endColumn": 81,
+                        "endOffset": 660
                     }
                 }
             },
@@ -82,18 +82,18 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 473,
-                    "endColumn": 99,
-                    "endOffset": 568
+                    "startOffset": 425,
+                    "endColumn": 96,
+                    "endOffset": 517
                 },
                 "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-zh-rTW\\values.xml",
+                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 698,
-                        "endColumn": 99,
-                        "endOffset": 793
+                        "startOffset": 665,
+                        "endColumn": 96,
+                        "endOffset": 757
                     }
                 }
             },
@@ -101,18 +101,18 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 573,
-                    "endColumn": 81,
-                    "endOffset": 650
+                    "startOffset": 522,
+                    "endColumn": 107,
+                    "endOffset": 625
                 },
                 "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-zh-rTW\\values.xml",
+                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 798,
-                        "endColumn": 81,
-                        "endOffset": 875
+                        "startOffset": 762,
+                        "endColumn": 107,
+                        "endOffset": 865
                     }
                 }
             },
@@ -120,18 +120,18 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 655,
-                    "endColumn": 96,
-                    "endOffset": 747
+                    "startOffset": 630,
+                    "endColumn": 95,
+                    "endOffset": 721
                 },
                 "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-zh-rTW\\values.xml",
+                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 880,
-                        "endColumn": 96,
-                        "endOffset": 972
+                        "startOffset": 870,
+                        "endColumn": 95,
+                        "endOffset": 961
                     }
                 }
             },
@@ -139,18 +139,18 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 752,
-                    "endColumn": 107,
-                    "endOffset": 855
+                    "startOffset": 726,
+                    "endColumn": 95,
+                    "endOffset": 817
                 },
                 "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-zh-rTW\\values.xml",
+                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 977,
-                        "endColumn": 107,
-                        "endOffset": 1080
+                        "startOffset": 966,
+                        "endColumn": 95,
+                        "endOffset": 1057
                     }
                 }
             },
@@ -158,18 +158,18 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 860,
-                    "endColumn": 95,
-                    "endOffset": 951
+                    "startOffset": 822,
+                    "endColumn": 94,
+                    "endOffset": 912
                 },
                 "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-zh-rTW\\values.xml",
+                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 1085,
-                        "endColumn": 95,
-                        "endOffset": 1176
+                        "startOffset": 1062,
+                        "endColumn": 94,
+                        "endOffset": 1152
                     }
                 }
             },
@@ -177,18 +177,18 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 956,
-                    "endColumn": 95,
-                    "endOffset": 1047
+                    "startOffset": 917,
+                    "endColumn": 96,
+                    "endOffset": 1009
                 },
                 "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-zh-rTW\\values.xml",
+                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 1181,
-                        "endColumn": 95,
-                        "endOffset": 1272
+                        "startOffset": 1157,
+                        "endColumn": 96,
+                        "endOffset": 1249
                     }
                 }
             },
@@ -196,18 +196,18 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 1052,
+                    "startOffset": 1014,
                     "endColumn": 94,
-                    "endOffset": 1142
+                    "endOffset": 1104
                 },
                 "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-zh-rTW\\values.xml",
+                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 1277,
+                        "startOffset": 1254,
                         "endColumn": 94,
-                        "endOffset": 1367
+                        "endOffset": 1344
                     }
                 }
             },
@@ -215,18 +215,18 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 1147,
-                    "endColumn": 96,
-                    "endOffset": 1239
+                    "startOffset": 1109,
+                    "endColumn": 99,
+                    "endOffset": 1204
                 },
                 "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-zh-rTW\\values.xml",
+                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 1372,
-                        "endColumn": 96,
-                        "endOffset": 1464
+                        "startOffset": 1349,
+                        "endColumn": 99,
+                        "endOffset": 1444
                     }
                 }
             },
@@ -234,75 +234,18 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 1244,
-                    "endColumn": 94,
-                    "endOffset": 1334
+                    "startOffset": 1209,
+                    "endColumn": 112,
+                    "endOffset": 1317
                 },
                 "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-zh-rTW\\values.xml",
+                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-zh-rTW\\values-zh-rTW.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 1469,
-                        "endColumn": 94,
-                        "endOffset": 1559
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 15,
-                    "startColumn": 4,
-                    "startOffset": 1339,
-                    "endColumn": 99,
-                    "endOffset": 1434
-                },
-                "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-zh-rTW\\values.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 1564,
-                        "endColumn": 99,
-                        "endOffset": 1659
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 16,
-                    "startColumn": 4,
-                    "startOffset": 1439,
-                    "endColumn": 112,
-                    "endOffset": 1547
-                },
-                "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-zh-rTW\\values.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 1664,
+                        "startOffset": 1449,
                         "endColumn": 112,
-                        "endOffset": 1772
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 17,
-                    "startColumn": 4,
-                    "startOffset": 1552,
-                    "endColumn": 93,
-                    "endOffset": 1641
-                },
-                "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-zh-rTW\\values.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 1777,
-                        "endColumn": 93,
-                        "endOffset": 1866
+                        "endOffset": 1557
                     }
                 }
             }

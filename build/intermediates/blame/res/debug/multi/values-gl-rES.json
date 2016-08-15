@@ -11,13 +11,13 @@
                     "endOffset": 162
                 },
                 "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-gl-rES\\values.xml",
+                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 280,
+                        "startOffset": 295,
                         "endColumn": 111,
-                        "endOffset": 387
+                        "endOffset": 402
                     }
                 }
             },
@@ -26,17 +26,17 @@
                     "startLine": 3,
                     "startColumn": 4,
                     "startOffset": 167,
-                    "endColumn": 107,
-                    "endOffset": 270
+                    "endColumn": 111,
+                    "endOffset": 274
                 },
                 "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-gl-rES\\values.xml",
+                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 392,
-                        "endColumn": 107,
-                        "endOffset": 495
+                        "startOffset": 407,
+                        "endColumn": 111,
+                        "endOffset": 514
                     }
                 }
             },
@@ -44,18 +44,18 @@
                 "to": {
                     "startLine": 4,
                     "startColumn": 4,
-                    "startOffset": 275,
-                    "endColumn": 122,
-                    "endOffset": 393
+                    "startOffset": 279,
+                    "endColumn": 107,
+                    "endOffset": 382
                 },
                 "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-gl-rES\\values.xml",
+                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 500,
-                        "endColumn": 122,
-                        "endOffset": 618
+                        "startOffset": 519,
+                        "endColumn": 107,
+                        "endOffset": 622
                     }
                 }
             },
@@ -63,18 +63,18 @@
                 "to": {
                     "startLine": 5,
                     "startColumn": 4,
-                    "startOffset": 398,
-                    "endColumn": 111,
-                    "endOffset": 505
+                    "startOffset": 387,
+                    "endColumn": 84,
+                    "endOffset": 467
                 },
                 "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-gl-rES\\values.xml",
+                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 623,
-                        "endColumn": 111,
-                        "endOffset": 730
+                        "startOffset": 627,
+                        "endColumn": 84,
+                        "endOffset": 707
                     }
                 }
             },
@@ -82,18 +82,18 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 510,
-                    "endColumn": 107,
-                    "endOffset": 613
+                    "startOffset": 472,
+                    "endColumn": 101,
+                    "endOffset": 569
                 },
                 "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-gl-rES\\values.xml",
+                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 735,
-                        "endColumn": 107,
-                        "endOffset": 838
+                        "startOffset": 712,
+                        "endColumn": 101,
+                        "endOffset": 809
                     }
                 }
             },
@@ -101,18 +101,18 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 618,
-                    "endColumn": 84,
-                    "endOffset": 698
+                    "startOffset": 574,
+                    "endColumn": 125,
+                    "endOffset": 695
                 },
                 "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-gl-rES\\values.xml",
+                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 843,
-                        "endColumn": 84,
-                        "endOffset": 923
+                        "startOffset": 814,
+                        "endColumn": 125,
+                        "endOffset": 935
                     }
                 }
             },
@@ -120,18 +120,18 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 703,
-                    "endColumn": 101,
-                    "endOffset": 800
+                    "startOffset": 700,
+                    "endColumn": 106,
+                    "endOffset": 802
                 },
                 "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-gl-rES\\values.xml",
+                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 928,
-                        "endColumn": 101,
-                        "endOffset": 1025
+                        "startOffset": 940,
+                        "endColumn": 106,
+                        "endOffset": 1042
                     }
                 }
             },
@@ -139,17 +139,17 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 805,
-                    "endColumn": 125,
-                    "endOffset": 926
+                    "startOffset": 807,
+                    "endColumn": 108,
+                    "endOffset": 911
                 },
                 "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-gl-rES\\values.xml",
+                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 1030,
-                        "endColumn": 125,
+                        "startOffset": 1047,
+                        "endColumn": 108,
                         "endOffset": 1151
                     }
                 }
@@ -158,18 +158,18 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 931,
-                    "endColumn": 106,
-                    "endOffset": 1033
+                    "startOffset": 916,
+                    "endColumn": 98,
+                    "endOffset": 1010
                 },
                 "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-gl-rES\\values.xml",
+                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
                         "startOffset": 1156,
-                        "endColumn": 106,
-                        "endOffset": 1258
+                        "endColumn": 98,
+                        "endOffset": 1250
                     }
                 }
             },
@@ -177,18 +177,18 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 1038,
-                    "endColumn": 108,
-                    "endOffset": 1142
+                    "startOffset": 1015,
+                    "endColumn": 107,
+                    "endOffset": 1118
                 },
                 "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-gl-rES\\values.xml",
+                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 1263,
-                        "endColumn": 108,
-                        "endOffset": 1367
+                        "startOffset": 1255,
+                        "endColumn": 107,
+                        "endOffset": 1358
                     }
                 }
             },
@@ -196,18 +196,18 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 1147,
-                    "endColumn": 98,
-                    "endOffset": 1241
+                    "startOffset": 1123,
+                    "endColumn": 102,
+                    "endOffset": 1221
                 },
                 "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-gl-rES\\values.xml",
+                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 1372,
-                        "endColumn": 98,
-                        "endOffset": 1466
+                        "startOffset": 1363,
+                        "endColumn": 102,
+                        "endOffset": 1461
                     }
                 }
             },
@@ -215,18 +215,18 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 1246,
-                    "endColumn": 107,
-                    "endOffset": 1349
+                    "startOffset": 1226,
+                    "endColumn": 106,
+                    "endOffset": 1328
                 },
                 "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-gl-rES\\values.xml",
+                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 1471,
-                        "endColumn": 107,
-                        "endOffset": 1574
+                        "startOffset": 1466,
+                        "endColumn": 106,
+                        "endOffset": 1568
                     }
                 }
             },
@@ -234,75 +234,18 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 1354,
-                    "endColumn": 102,
-                    "endOffset": 1452
+                    "startOffset": 1333,
+                    "endColumn": 121,
+                    "endOffset": 1450
                 },
                 "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-gl-rES\\values.xml",
+                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.0\\res\\values-gl-rES\\values-gl-rES.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 1579,
-                        "endColumn": 102,
-                        "endOffset": 1677
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 15,
-                    "startColumn": 4,
-                    "startOffset": 1457,
-                    "endColumn": 106,
-                    "endOffset": 1559
-                },
-                "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-gl-rES\\values.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 1682,
-                        "endColumn": 106,
-                        "endOffset": 1784
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 16,
-                    "startColumn": 4,
-                    "startOffset": 1564,
-                    "endColumn": 121,
-                    "endOffset": 1681
-                },
-                "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-gl-rES\\values.xml",
-                    "position": {
-                        "startLine": 18,
-                        "startColumn": 4,
-                        "startOffset": 1789,
+                        "startOffset": 1573,
                         "endColumn": 121,
-                        "endOffset": 1906
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 17,
-                    "startColumn": 4,
-                    "startOffset": 1686,
-                    "endColumn": 99,
-                    "endOffset": 1781
-                },
-                "from": {
-                    "file": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.0.0\\res\\values-gl-rES\\values.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 1911,
-                        "endColumn": 99,
-                        "endOffset": 2006
+                        "endOffset": 1690
                     }
                 }
             }
