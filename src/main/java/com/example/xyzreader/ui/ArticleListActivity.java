@@ -9,7 +9,9 @@ import android.content.Loader;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
@@ -24,7 +26,7 @@ import com.example.xyzreader.data.ArticleLoader;
 import com.example.xyzreader.data.ItemsContract;
 import com.example.xyzreader.data.UpdaterService;
 
-public class ArticleListActivity extends ActionBarActivity implements
+public class ArticleListActivity extends AppCompatActivity implements
         LoaderManager.LoaderCallbacks<Cursor> {
 
     private Toolbar mToolbar;
@@ -36,9 +38,20 @@ public class ArticleListActivity extends ActionBarActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article_list);
 
-        getSupportActionBar().setDisplayUseLogoEnabled(true);
-        getSupportActionBar().setIcon(R.mipmap.ic_launcher);
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
+
+        if (mToolbar != null) {
+            setSupportActionBar(mToolbar);
+            ActionBar mActionBar = getSupportActionBar();
+            if (mActionBar != null) {
+                mActionBar.setDisplayUseLogoEnabled(true);
+                mActionBar.setIcon(R.mipmap.ic_launcher);
+                mActionBar.setDisplayShowTitleEnabled(false);
+            }
+
+        }
+
+
 
         final View toolbarContainerView = findViewById(R.id.toolbar_container);
 

@@ -41,6 +41,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/logo"
+                android:paddingStart="20dp"
+                android:paddingEnd="0dp"
                 android:contentDescription="@string/app_name" />
 
             <android.support.design.widget.FloatingActionButton
@@ -54,11 +56,11 @@
                 android:layout_gravity = "end"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_alignTop = "@+id/fab"
-                android:layout_toEndOf = "@+id/fab"
-                android:layout_toRightOf = "@+id/fab"/>
+                android:layout_alignBottom = "@+id/fab"
+                android:layout_toEndOf = "@+id/fab"/>
 
         </android.support.v7.widget.Toolbar>
+
     </FrameLayout>
 
 </FrameLayout>

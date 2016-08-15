@@ -1469,6 +1469,8 @@
     </style>
     <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
 
+    <item name="colorPrimary">#9C27B0</item>
+    <item name="android:colorPrimaryDark">#4A148C</item>
     </style>
     <style name="Theme.Bacon.Detail">
         <item name="android:statusBarColor">@android:color/transparent</item>
