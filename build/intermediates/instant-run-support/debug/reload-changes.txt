@@ -1,0 +1,5 @@
+CHANGED,C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\xyzreader\ui\ArticleDetailFragment$1$override.class
+CHANGED,C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\xyzreader\ui\ArticleDetailFragment$2$override.class
+CHANGED,C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\xyzreader\ui\ArticleDetailFragment$override.class
+CHANGED,C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\xyzreader\ui\ArticleDetailFragment$3$override.class
+CHANGED,C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
