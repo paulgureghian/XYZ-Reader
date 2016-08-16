@@ -28,11 +28,6 @@ import com.android.volley.toolbox.ImageLoader;
 import com.example.xyzreader.R;
 import com.example.xyzreader.data.ArticleLoader;
 
-/**
- * A fragment representing a single Article detail screen. This fragment is
- * either contained in a {@link ArticleListActivity} in two-pane mode (on
- * tablets) or a {@link ArticleDetailActivity} on handsets.
- */
 public class ArticleDetailFragment extends Fragment implements
         LoaderManager.LoaderCallbacks<Cursor> {
     private static final String TAG = "ArticleDetailFragment";
@@ -55,13 +50,8 @@ public class ArticleDetailFragment extends Fragment implements
     private boolean mIsCard = false;
     private int mStatusBarFullOpacityBottom;
 
-    /**
-     * Mandatory empty constructor for the fragment manager to instantiate the
-     * fragment (e.g. upon screen orientation changes).
-     */
     public ArticleDetailFragment() {
     }
-
     public static ArticleDetailFragment newInstance(long itemId) {
         Bundle arguments = new Bundle();
         arguments.putLong(ARG_ITEM_ID, itemId);
@@ -69,7 +59,6 @@ public class ArticleDetailFragment extends Fragment implements
         fragment.setArguments(arguments);
         return fragment;
     }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,13 +66,11 @@ public class ArticleDetailFragment extends Fragment implements
         if (getArguments().containsKey(ARG_ITEM_ID)) {
             mItemId = getArguments().getLong(ARG_ITEM_ID);
         }
-
         mIsCard = getResources().getBoolean(R.bool.detail_is_card);
         mStatusBarFullOpacityBottom = getResources().getDimensionPixelSize(
                 R.dimen.detail_card_top_margin);
         setHasOptionsMenu(true);
     }
-
     public ArticleDetailActivity getActivityCast() {
         return (ArticleDetailActivity) getActivity();
     }
@@ -92,13 +79,8 @@ public class ArticleDetailFragment extends Fragment implements
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        // In support library r8, calling initLoader for a fragment in a FragmentPagerAdapter in
-        // the fragment's onCreate may cause the same LoaderManager to be dealt to multiple
-        // fragments because their mIndex is -1 (haven't been added to the activity yet). Thus,
-        // we do this in onActivityCreated.
         getLoaderManager().initLoader(0, null, this);
     }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
@@ -111,7 +93,6 @@ public class ArticleDetailFragment extends Fragment implements
                 mTopInset = insets.top;
             }
         });
-
         mScrollView = (ObservableScrollView) mRootView.findViewById(R.id.scrollview);
         mScrollView.setCallbacks(new ObservableScrollView.Callbacks() {
             @Override
@@ -122,7 +103,6 @@ public class ArticleDetailFragment extends Fragment implements
                 updateStatusBar();
             }
         });
-
         mPhotoView = (ImageView) mRootView.findViewById(R.id.photo);
         mPhotoContainerView = mRootView.findViewById(R.id.photo_container);
 
@@ -137,12 +117,10 @@ public class ArticleDetailFragment extends Fragment implements
                         .getIntent(), getString(R.string.action_share)));
             }
         });
-
         bindViews();
         updateStatusBar();
         return mRootView;
     }
-
     private void updateStatusBar() {
         int color = 0;
         if (mPhotoView != null && mTopInset != 0 && mScrollY > 0) {
@@ -157,11 +135,9 @@ public class ArticleDetailFragment extends Fragment implements
         mStatusBarColorDrawable.setColor(color);
         mDrawInsetsFrameLayout.setInsetBackground(mStatusBarColorDrawable);
     }
-
     static float progress(float v, float min, float max) {
         return constrain((v - min) / (max - min), 0, 1);
     }
-
     static float constrain(float val, float min, float max) {
         if (val < min) {
             return min;
@@ -171,12 +147,10 @@ public class ArticleDetailFragment extends Fragment implements
             return val;
         }
     }
-
     private void bindViews() {
         if (mRootView == null) {
             return;
         }
-
         TextView titleView = (TextView) mRootView.findViewById(R.id.article_title);
         TextView bylineView = (TextView) mRootView.findViewById(R.id.article_byline);
         bylineView.setMovementMethod(new LinkMovementMethod());
@@ -211,10 +185,8 @@ public class ArticleDetailFragment extends Fragment implements
                                 updateStatusBar();
                             }
                         }
-
                         @Override
                         public void onErrorResponse(VolleyError volleyError) {
-
                         }
                     });
         } else {
@@ -224,12 +196,10 @@ public class ArticleDetailFragment extends Fragment implements
             bodyView.setText("N/A");
         }
     }
-
     @Override
     public Loader<Cursor> onCreateLoader(int i, Bundle bundle) {
         return ArticleLoader.newInstanceForItemId(getActivity(), mItemId);
     }
-
     @Override
     public void onLoadFinished(Loader<Cursor> cursorLoader, Cursor cursor) {
         if (!isAdded()) {
@@ -238,30 +208,24 @@ public class ArticleDetailFragment extends Fragment implements
             }
             return;
         }
-
         mCursor = cursor;
         if (mCursor != null && !mCursor.moveToFirst()) {
             Log.e(TAG, "Error reading item detail cursor");
             mCursor.close();
             mCursor = null;
         }
-
         bindViews();
     }
-
     @Override
     public void onLoaderReset(Loader<Cursor> cursorLoader) {
         mCursor = null;
         bindViews();
     }
-
     public int getUpButtonFloor() {
         if (mPhotoContainerView == null || mPhotoView.getHeight() == 0) {
             return Integer.MAX_VALUE;
         }
-
-        // account for parallax
-        return mIsCard
+                return mIsCard
                 ? (int) mPhotoContainerView.getTranslationY() + mPhotoView.getHeight() - mScrollY
                 : mPhotoView.getHeight() - mScrollY;
     }

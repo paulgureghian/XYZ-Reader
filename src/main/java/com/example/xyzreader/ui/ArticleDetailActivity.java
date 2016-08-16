@@ -20,9 +20,7 @@ import com.example.xyzreader.R;
 import com.example.xyzreader.data.ArticleLoader;
 import com.example.xyzreader.data.ItemsContract;
 
-/**
- * An activity representing a single Article detail screen, letting you swipe between articles.
- */
+
 public class ArticleDetailActivity extends ActionBarActivity
         implements LoaderManager.LoaderCallbacks<Cursor> {
 
@@ -117,10 +115,10 @@ public class ArticleDetailActivity extends ActionBarActivity
         mCursor = cursor;
         mPagerAdapter.notifyDataSetChanged();
 
-        // Select the start ID
+
         if (mStartId > 0) {
             mCursor.moveToFirst();
-            // TODO: optimize
+
             while (!mCursor.isAfterLast()) {
                 if (mCursor.getLong(ArticleLoader.Query._ID) == mStartId) {
                     final int position = mCursor.getPosition();

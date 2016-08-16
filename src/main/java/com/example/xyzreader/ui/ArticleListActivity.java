@@ -10,7 +10,7 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarActivity;
+
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
@@ -48,10 +48,7 @@ public class ArticleListActivity extends AppCompatActivity implements
                 mActionBar.setIcon(R.mipmap.ic_launcher);
                 mActionBar.setDisplayShowTitleEnabled(false);
             }
-
         }
-
-
 
         final View toolbarContainerView = findViewById(R.id.toolbar_container);
 
@@ -64,7 +61,6 @@ public class ArticleListActivity extends AppCompatActivity implements
             refresh();
         }
     }
-
     private void refresh() {
         startService(new Intent(this, UpdaterService.class));
     }
@@ -75,13 +71,11 @@ public class ArticleListActivity extends AppCompatActivity implements
         registerReceiver(mRefreshingReceiver,
                 new IntentFilter(UpdaterService.BROADCAST_ACTION_STATE_CHANGE));
     }
-
     @Override
     protected void onStop() {
         super.onStop();
         unregisterReceiver(mRefreshingReceiver);
     }
-
     private boolean mIsRefreshing = false;
 
     private BroadcastReceiver mRefreshingReceiver = new BroadcastReceiver() {
@@ -93,7 +87,6 @@ public class ArticleListActivity extends AppCompatActivity implements
             }
         }
     };
-
     private void updateRefreshingUI() {
         mSwipeRefreshLayout.setRefreshing(mIsRefreshing);
     }
@@ -102,7 +95,6 @@ public class ArticleListActivity extends AppCompatActivity implements
     public Loader<Cursor> onCreateLoader(int i, Bundle bundle) {
         return ArticleLoader.newAllArticlesInstance(this);
     }
-
     @Override
     public void onLoadFinished(Loader<Cursor> cursorLoader, Cursor cursor) {
         Adapter adapter = new Adapter(cursor);
@@ -113,7 +105,6 @@ public class ArticleListActivity extends AppCompatActivity implements
                 new StaggeredGridLayoutManager(columnCount, StaggeredGridLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(sglm);
     }
-
     @Override
     public void onLoaderReset(Loader<Cursor> loader) {
         mRecyclerView.setAdapter(null);
@@ -131,7 +122,6 @@ public class ArticleListActivity extends AppCompatActivity implements
             mCursor.moveToPosition(position);
             return mCursor.getLong(ArticleLoader.Query._ID);
         }
-
         @Override
         public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             View view = getLayoutInflater().inflate(R.layout.list_item_article, parent, false);
@@ -145,7 +135,6 @@ public class ArticleListActivity extends AppCompatActivity implements
             });
             return vh;
         }
-
         @Override
         public void onBindViewHolder(ViewHolder holder, int position) {
             mCursor.moveToPosition(position);
@@ -162,13 +151,11 @@ public class ArticleListActivity extends AppCompatActivity implements
                     ImageLoaderHelper.getInstance(ArticleListActivity.this).getImageLoader());
             holder.thumbnailView.setAspectRatio(mCursor.getFloat(ArticleLoader.Query.ASPECT_RATIO));
         }
-
         @Override
         public int getItemCount() {
             return mCursor.getCount();
         }
     }
-
     public static class ViewHolder extends RecyclerView.ViewHolder {
         public DynamicHeightNetworkImageView thumbnailView;
         public TextView titleView;
