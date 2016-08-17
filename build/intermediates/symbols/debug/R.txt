@@ -767,9 +767,10 @@ int string action_settings 0x7f060012
 int string action_share 0x7f060013
 int string app_name 0x7f060014
 int string appbar_scrolling_view_behavior 0x7f060015
-int string status_bar_notification_info_overflow 0x7f060016
-int string up 0x7f060017
-int string welcome_xyz_reader 0x7f060018
+int string detail 0x7f060016
+int string status_bar_notification_info_overflow 0x7f060017
+int string up 0x7f060018
+int string welcome_xyz_reader 0x7f060019
 int style AlertDialog_AppCompat 0x7f080074
 int style AlertDialog_AppCompat_Light 0x7f080075
 int style Animation_AppCompat_Dialog 0x7f080076
