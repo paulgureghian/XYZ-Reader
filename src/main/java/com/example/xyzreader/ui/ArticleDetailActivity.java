@@ -56,7 +56,6 @@ public class ArticleDetailActivity extends AppCompatActivity
             if (mActionBar != null) {
                 mActionBar.setDisplayHomeAsUpEnabled(true);
                 mActionBar.setDisplayUseLogoEnabled(true);
-                mActionBar.setDisplayShowTitleEnabled(false);
                 mActionBar.setDisplayShowTitleEnabled(true);
             }
 
@@ -85,19 +84,12 @@ public class ArticleDetailActivity extends AppCompatActivity
                 updateUpButtonPosition();
             }
         });
-        mUpButtonContainer = findViewById(R.id.up_container);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            mUpButtonContainer.setOnApplyWindowInsetsListener(new View.OnApplyWindowInsetsListener() {
-                @Override
-                public WindowInsets onApplyWindowInsets(View view, WindowInsets windowInsets) {
-                    view.onApplyWindowInsets(windowInsets);
-                    mTopInset = windowInsets.getSystemWindowInsetTop();
-                    mUpButtonContainer.setTranslationY(mTopInset);
-                    return windowInsets;
+
                 }
-            });
-        }
+
+
         if (savedInstanceState == null) {
             if (getIntent() != null && getIntent().getData() != null) {
                 mStartId = ItemsContract.Items.getItemId(getIntent().getData());
