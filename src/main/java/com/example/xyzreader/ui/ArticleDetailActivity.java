@@ -57,6 +57,7 @@ public class ArticleDetailActivity extends AppCompatActivity
                 mActionBar.setDisplayHomeAsUpEnabled(true);
                 mActionBar.setDisplayUseLogoEnabled(true);
                 mActionBar.setDisplayShowTitleEnabled(false);
+                mActionBar.setDisplayShowTitleEnabled(true);
             }
 
             getLoaderManager().initLoader(0, null, this);
