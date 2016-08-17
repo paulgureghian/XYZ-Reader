@@ -566,7 +566,6 @@ int id action_menu_presenter 0x7f0d0003
 int id action_mode_bar 0x7f0d0054
 int id action_mode_bar_stub 0x7f0d0053
 int id action_mode_close_button 0x7f0d003c
-int id action_up 0x7f0d0068
 int id activity_chooser_view_content 0x7f0d003d
 int id alertTitle 0x7f0d0047
 int id always 0x7f0d002b
@@ -679,6 +678,7 @@ int id time 0x7f0d0081
 int id title 0x7f0d0043
 int id title_template 0x7f0d0046
 int id toolbar 0x7f0d006d
+int id toolbar1 0x7f0d0068
 int id toolbar_container 0x7f0d006c
 int id top 0x7f0d0027
 int id topPanel 0x7f0d0045

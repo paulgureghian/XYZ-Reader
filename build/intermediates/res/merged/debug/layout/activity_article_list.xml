@@ -21,11 +21,6 @@
         android:src="@drawable/ic_plus_white_24dp"
         app:backgroundTint="@color/theme_accent"/>
 
-
-
-
-
-
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/swipe_refresh_layout"
         android:layout_width="match_parent"

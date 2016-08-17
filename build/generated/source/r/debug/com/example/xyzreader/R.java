@@ -2160,7 +2160,6 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0d0054;
         public static final int action_mode_bar_stub=0x7f0d0053;
         public static final int action_mode_close_button=0x7f0d003c;
-        public static final int action_up=0x7f0d0068;
         public static final int activity_chooser_view_content=0x7f0d003d;
         public static final int alertTitle=0x7f0d0047;
         public static final int always=0x7f0d002b;
@@ -2273,6 +2272,7 @@ containing a value of this type.
         public static final int title=0x7f0d0043;
         public static final int title_template=0x7f0d0046;
         public static final int toolbar=0x7f0d006d;
+        public static final int toolbar1=0x7f0d0068;
         public static final int toolbar_container=0x7f0d006c;
         public static final int top=0x7f0d0027;
         public static final int topPanel=0x7f0d0045;
