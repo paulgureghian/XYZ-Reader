@@ -54,6 +54,7 @@ public class ArticleDetailActivity extends AppCompatActivity
             setSupportActionBar(mToolbar);
             ActionBar mActionBar = getSupportActionBar();
             if (mActionBar != null) {
+                mActionBar.setDisplayHomeAsUpEnabled(true);
                 mActionBar.setDisplayUseLogoEnabled(true);
                 mActionBar.setDisplayShowTitleEnabled(false);
             }
