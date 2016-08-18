@@ -50,10 +50,10 @@ public class ArticleListActivity extends AppCompatActivity implements
             if (mActionBar != null) {
                 mActionBar.setDisplayUseLogoEnabled(true);
                 mActionBar.setIcon(R.mipmap.ic_launcher);
-                mActionBar.setDisplayShowTitleEnabled(false);
+                mActionBar.setDisplayShowTitleEnabled(true);
             }
         }
-        final View toolbarContainerView = findViewById(R.id.toolbar_container);
+
 
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
 

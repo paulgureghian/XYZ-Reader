@@ -60,7 +60,7 @@ public class UpdaterService extends IntentService {
                 throw new JSONException("Invalid parsed item array" );
             }
 
-            for (int i = 0; i < array.length(); i++) {
+            for (int i = 0; i < 16; i++) {
                 ContentValues values = new ContentValues();
                 JSONObject object = array.getJSONObject(i);
                 values.put(ItemsContract.Items.SERVER_ID, object.getString("id" ));
