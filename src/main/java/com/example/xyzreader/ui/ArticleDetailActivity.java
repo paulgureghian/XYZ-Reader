@@ -48,25 +48,14 @@ public class ArticleDetailActivity extends AppCompatActivity
         }
         setContentView(R.layout.activity_article_detail);
 
-        mToolbar = (Toolbar) findViewById(R.id.toolbar1);
+        getLoaderManager().initLoader(0, null, this);
+        mPagerAdapter = new MyPagerAdapter(getFragmentManager());
+        mPager = (ViewPager) findViewById(R.id.pager);
+        mPager.setAdapter(mPagerAdapter);
+        mPager.setPageMargin((int) TypedValue
+                .applyDimension(TypedValue.COMPLEX_UNIT_DIP, 1, getResources().getDisplayMetrics()));
+        mPager.setPageMarginDrawable(new ColorDrawable(0x22000000));
 
-        if (mToolbar != null) {
-            setSupportActionBar(mToolbar);
-            ActionBar mActionBar = getSupportActionBar();
-            if (mActionBar != null) {
-                mActionBar.setDisplayHomeAsUpEnabled(true);
-                mActionBar.setDisplayUseLogoEnabled(true);
-                mActionBar.setDisplayShowTitleEnabled(true);
-            }
-
-            getLoaderManager().initLoader(0, null, this);
-            mPagerAdapter = new MyPagerAdapter(getFragmentManager());
-            mPager = (ViewPager) findViewById(R.id.pager);
-            mPager.setAdapter(mPagerAdapter);
-            mPager.setPageMargin((int) TypedValue
-                    .applyDimension(TypedValue.COMPLEX_UNIT_DIP, 1, getResources().getDisplayMetrics()));
-            mPager.setPageMarginDrawable(new ColorDrawable(0x22000000));
-        }
         mPager.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener() {
             @Override
             public void onPageScrollStateChanged(int state) {
@@ -87,8 +76,7 @@ public class ArticleDetailActivity extends AppCompatActivity
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
 
-                }
-
+        }
 
         if (savedInstanceState == null) {
             if (getIntent() != null && getIntent().getData() != null) {
@@ -132,8 +120,6 @@ public class ArticleDetailActivity extends AppCompatActivity
         }
     }
     private void updateUpButtonPosition() {
-
-
     }
     private class MyPagerAdapter extends FragmentStatePagerAdapter {
         public MyPagerAdapter(FragmentManager fm) {

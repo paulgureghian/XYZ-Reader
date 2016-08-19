@@ -2646,6 +2646,7 @@ containing a value of this type.
         public static final int appbar=0x7f0d0070;
         public static final int article_body=0x7f0d0083;
         public static final int article_byline=0x7f0d0082;
+        public static final int article_detail=0x7f0d007b;
         public static final int article_subtitle=0x7f0d0086;
         public static final int article_title=0x7f0d0081;
         public static final int auto=0x7f0d0031;
@@ -2672,7 +2673,6 @@ containing a value of this type.
         public static final int design_menu_item_text=0x7f0d0078;
         public static final int design_navigation_view=0x7f0d0077;
         public static final int disableHome=0x7f0d000e;
-        public static final int draw_insets_frame_layout=0x7f0d007b;
         public static final int edit_query=0x7f0d005f;
         public static final int end=0x7f0d0025;
         public static final int end_padder=0x7f0d0093;

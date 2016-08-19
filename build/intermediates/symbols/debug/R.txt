@@ -678,6 +678,7 @@ int id always 0x7f0d0035
 int id appbar 0x7f0d0070
 int id article_body 0x7f0d0083
 int id article_byline 0x7f0d0082
+int id article_detail 0x7f0d007b
 int id article_subtitle 0x7f0d0086
 int id article_title 0x7f0d0081
 int id auto 0x7f0d0031
@@ -704,7 +705,6 @@ int id design_menu_item_action_area_stub 0x7f0d0079
 int id design_menu_item_text 0x7f0d0078
 int id design_navigation_view 0x7f0d0077
 int id disableHome 0x7f0d000e
-int id draw_insets_frame_layout 0x7f0d007b
 int id edit_query 0x7f0d005f
 int id end 0x7f0d0025
 int id end_padder 0x7f0d0093
