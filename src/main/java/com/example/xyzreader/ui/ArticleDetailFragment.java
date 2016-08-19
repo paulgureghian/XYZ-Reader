@@ -14,6 +14,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.app.ShareCompat;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.graphics.Palette;
 import android.support.v7.widget.Toolbar;
@@ -98,12 +99,18 @@ public class ArticleDetailFragment extends Fragment implements
                 mRootView.findViewById(R.id.article_detail);
                 mToolbar = (Toolbar) mRootView.findViewById(R.id.toolbar1);
 
+        ((AppCompatActivity)getActivity()).setSupportActionBar(mToolbar);
+
+
+        ActionBar actionBar = ((AppCompatActivity)getActivity()).getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayShowTitleEnabled(true);
 
 
 
 
-        Toolbar toolbar = (Toolbar)  getActivity().findViewById(R.id.toolbar1);
-        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
+
+
 
 
 
