@@ -75,14 +75,14 @@
         jar="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="24.0.0"
-        sha1="c9e73130a69f695853f302f8bfe42064b50cefcd">
+        sha1="2be8a6832fd85c25ca2743f6993677db9fe64bc5">
         <dex dex="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_2abb50b4fa3bff08d46504fdb15c0a006013e996\classes.dex" />
     </item>
     <item
         jar="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="24.0.0"
-        sha1="f3cf06644742eceaadb2ebc9e9cd1629a07f5c38">
+        sha1="f96f3d55bde38c2e3c5470b45814360b35c4eabb">
         <dex dex="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_c15b7e6f30ded88620c3c15b3e8d2b9bdc6a87ad\classes.dex" />
     </item>
     <item
@@ -93,18 +93,18 @@
         <dex dex="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.0.0_be7641c0add4f6c7f495d327ec718cc674bddb86\classes.dex" />
     </item>
     <item
-        jar="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
-        <dex dex="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0_8c8d3f7860505868393ab952628b1747da84adc9\classes.dex" />
-    </item>
-    <item
         jar="C:\Users\Paul\AndroidStudioProjects\XYZReader\libs\volley.jar"
         jumboMode="true"
         revision="24.0.0"
         sha1="c68094cbd011a3f9dccbfe16e77a2cf43622e277">
         <dex dex="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\2\volley_f07f8fe99bcfbadb156c6b60f1b3058b8c44c68a\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0_8c8d3f7860505868393ab952628b1747da84adc9\classes.dex" />
     </item>
     <item
         jar="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0\jars\classes.jar"

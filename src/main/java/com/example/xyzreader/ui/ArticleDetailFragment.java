@@ -14,7 +14,9 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.app.ShareCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.graphics.Palette;
+import android.support.v7.widget.Toolbar;
 import android.text.Html;
 import android.text.format.DateUtils;
 import android.text.method.LinkMovementMethod;
@@ -45,7 +47,7 @@ public class ArticleDetailFragment extends Fragment implements
     private ObservableScrollView mScrollView;
     private CoordinatorLayout mCoordinatorLayout;
     private ColorDrawable mStatusBarColorDrawable;
-
+    private Toolbar mToolbar;
     private int mTopInset;
     private View mPhotoContainerView;
     private ImageView mPhotoView;
@@ -94,6 +96,20 @@ public class ArticleDetailFragment extends Fragment implements
         mRootView = inflater.inflate(R.layout.fragment_article_detail, container, false);
         mCoordinatorLayout = (CoordinatorLayout)
                 mRootView.findViewById(R.id.article_detail);
+                mToolbar = (Toolbar) mRootView.findViewById(R.id.toolbar1);
+
+
+
+
+
+        Toolbar toolbar = (Toolbar)  getActivity().findViewById(R.id.toolbar1);
+        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
+
+
+
+
+
+
         {
 
         }
@@ -122,7 +138,7 @@ public class ArticleDetailFragment extends Fragment implements
                         .getIntent(), getString(R.string.action_share)));
             }
         });
-        bindViews();
+
         updateStatusBar();
         return mRootView;
     }
