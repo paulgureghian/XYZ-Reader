@@ -742,8 +742,8 @@ int id normal 0x7f0d000c
 int id pager 0x7f0d006c
 int id parallax 0x7f0d002b
 int id parentPanel 0x7f0d0048
-int id photo 0x7f0d007f
-int id photo_container 0x7f0d007e
+int id photo 0x7f0d007c
+int id photo_container 0x7f0d007f
 int id pin 0x7f0d002c
 int id progress_circular 0x7f0d0006
 int id progress_horizontal 0x7f0d0007
@@ -757,7 +757,7 @@ int id scrollIndicatorDown 0x7f0d0050
 int id scrollIndicatorUp 0x7f0d004d
 int id scrollView 0x7f0d004e
 int id scrollable 0x7f0d003b
-int id scrollview 0x7f0d007d
+int id scrollview 0x7f0d007e
 int id search_badge 0x7f0d0061
 int id search_bar 0x7f0d0060
 int id search_button 0x7f0d0062
@@ -796,7 +796,7 @@ int id time 0x7f0d008d
 int id title 0x7f0d0045
 int id title_template 0x7f0d004a
 int id toolbar 0x7f0d0071
-int id toolbar1 0x7f0d007c
+int id toolbar1 0x7f0d007d
 int id top 0x7f0d002a
 int id topPanel 0x7f0d0049
 int id touch_outside 0x7f0d0072

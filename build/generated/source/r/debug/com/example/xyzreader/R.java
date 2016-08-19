@@ -2710,8 +2710,8 @@ containing a value of this type.
         public static final int pager=0x7f0d006c;
         public static final int parallax=0x7f0d002b;
         public static final int parentPanel=0x7f0d0048;
-        public static final int photo=0x7f0d007f;
-        public static final int photo_container=0x7f0d007e;
+        public static final int photo=0x7f0d007c;
+        public static final int photo_container=0x7f0d007f;
         public static final int pin=0x7f0d002c;
         public static final int progress_circular=0x7f0d0006;
         public static final int progress_horizontal=0x7f0d0007;
@@ -2725,7 +2725,7 @@ containing a value of this type.
         public static final int scrollIndicatorUp=0x7f0d004d;
         public static final int scrollView=0x7f0d004e;
         public static final int scrollable=0x7f0d003b;
-        public static final int scrollview=0x7f0d007d;
+        public static final int scrollview=0x7f0d007e;
         public static final int search_badge=0x7f0d0061;
         public static final int search_bar=0x7f0d0060;
         public static final int search_button=0x7f0d0062;
@@ -2764,7 +2764,7 @@ containing a value of this type.
         public static final int title=0x7f0d0045;
         public static final int title_template=0x7f0d004a;
         public static final int toolbar=0x7f0d0071;
-        public static final int toolbar1=0x7f0d007c;
+        public static final int toolbar1=0x7f0d007d;
         public static final int top=0x7f0d002a;
         public static final int topPanel=0x7f0d0049;
         public static final int touch_outside=0x7f0d0072;

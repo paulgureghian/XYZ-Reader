@@ -20,6 +20,17 @@
             app:expandedTitleMarginStart="48dp"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
+            <ImageView
+                android:id="@+id/photo"
+                app:layout_collapseMode="parallax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar1"
                 android:layout_width="match_parent"
@@ -53,10 +64,7 @@
                 android:layout_height="wrap_content"
                 android:background="@color/photo_placeholder">
 
-                <ImageView
-                    android:id="@+id/photo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+
 
                 <View
                     android:layout_width="match_parent"
