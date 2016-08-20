@@ -46,7 +46,6 @@ public class ArticleDetailFragment extends Fragment implements
     private long mItemId;
     private View mRootView;
     private int mMutedColor = 0xFF333333;
-  //  private NestedScrollView mScrollView;
     private CoordinatorLayout mCoordinatorLayout;
     private ColorDrawable mStatusBarColorDrawable;
     private Toolbar mToolbar;
@@ -120,10 +119,10 @@ public class ArticleDetailFragment extends Fragment implements
 
         }
 
-    //    mScrollView = (NestedScrollView) mRootView.findViewById(R.id.scrollview);
+    
 
         mPhotoView = (ImageView) mRootView.findViewById(R.id.photo);
-        mPhotoContainerView = mRootView.findViewById(R.id.photo_container);
+        
 
         mStatusBarColorDrawable = new ColorDrawable(0);
 
