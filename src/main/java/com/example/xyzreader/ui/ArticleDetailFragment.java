@@ -12,6 +12,7 @@ import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.app.ShareCompat;
 import android.support.v4.widget.NestedScrollView;
@@ -106,7 +107,8 @@ public class ArticleDetailFragment extends Fragment implements
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowTitleEnabled(true);
 
-
+        CollapsingToolbarLayout mCollapsingToolbar = (CollapsingToolbarLayout)mRootView.findViewById(R.id.collapsing_toolbar);
+        mCollapsingToolbar.setExpandedTitleColor(getResources().getColor(android.R.color.transparent));
 
 
 
