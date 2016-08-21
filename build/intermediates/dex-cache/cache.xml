@@ -75,14 +75,14 @@
         jar="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="24.0.0"
-        sha1="fbe39615176d4ecd787f2bbbe0468722d1f26cd5">
+        sha1="10ba8f2658e569b2baa32b875635e94f160f1319">
         <dex dex="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_2abb50b4fa3bff08d46504fdb15c0a006013e996\classes.dex" />
     </item>
     <item
         jar="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="24.0.0"
-        sha1="15c275caac4ab359d29d419100bd931b73b7b4fa">
+        sha1="2d96353fb5acc8f304a2a268621776c27f54b6b7">
         <dex dex="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_c15b7e6f30ded88620c3c15b3e8d2b9bdc6a87ad\classes.dex" />
     </item>
     <item

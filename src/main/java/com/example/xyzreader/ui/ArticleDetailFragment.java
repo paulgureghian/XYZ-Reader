@@ -107,8 +107,7 @@ public class ArticleDetailFragment extends Fragment implements
 
         ActionBar actionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
 
-        actionBar.setHomeButtonEnabled(true);
-        actionBar.setDisplayHomeAsUpEnabled(true);
+
         actionBar.setDisplayShowTitleEnabled(true);
 
         CollapsingToolbarLayout mCollapsingToolbar = (CollapsingToolbarLayout) mRootView.findViewById(R.id.collapsing_toolbar);
