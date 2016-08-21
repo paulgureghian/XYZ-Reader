@@ -25,6 +25,8 @@ import android.text.format.DateUtils;
 import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -98,33 +100,29 @@ public class ArticleDetailFragment extends Fragment implements
         mRootView = inflater.inflate(R.layout.fragment_article_detail, container, false);
         mCoordinatorLayout = (CoordinatorLayout)
                 mRootView.findViewById(R.id.article_detail);
-                mToolbar = (Toolbar) mRootView.findViewById(R.id.toolbar1);
+        mToolbar = (Toolbar) mRootView.findViewById(R.id.toolbar1);
 
-        ((AppCompatActivity)getActivity()).setSupportActionBar(mToolbar);
+        ((AppCompatActivity) getActivity()).setSupportActionBar(mToolbar);
 
 
-        ActionBar actionBar = ((AppCompatActivity)getActivity()).getSupportActionBar();
+        ActionBar actionBar = ((AppCompatActivity) getActivity()).getSupportActionBar();
+
+        actionBar.setHomeButtonEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowTitleEnabled(true);
 
-        CollapsingToolbarLayout mCollapsingToolbar = (CollapsingToolbarLayout)mRootView.findViewById(R.id.collapsing_toolbar);
+        CollapsingToolbarLayout mCollapsingToolbar = (CollapsingToolbarLayout) mRootView.findViewById(R.id.collapsing_toolbar);
         mCollapsingToolbar.setExpandedTitleColor(getResources().getColor(android.R.color.transparent));
-
-
-
-
-
-
+        mCollapsingToolbar.isTitleEnabled();
 
 
         {
 
         }
 
-    
 
         mPhotoView = (ImageView) mRootView.findViewById(R.id.photo);
-        
+
 
         mStatusBarColorDrawable = new ColorDrawable(0);
 
@@ -244,4 +242,22 @@ public class ArticleDetailFragment extends Fragment implements
                 ? (int) mPhotoContainerView.getTranslationY() + mPhotoView.getHeight() - mScrollY
                 : mPhotoView.getHeight() - mScrollY;
     }
-}
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+
+
+            switch (item.getItemId()) {
+                case android.R.id.home:
+                    getActivity().onBackPressed();
+
+                    return true;
+            }
+
+                return super.onOptionsItemSelected(item);
+
+
+            }
+        }
+
