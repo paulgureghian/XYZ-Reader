@@ -33,6 +33,7 @@
                 android:layout_height="?actionBarSize"
                 app:layout_scrollFlags="scroll|enterAlways"
                 android:background="?attr/colorPrimary"
+                app:contentInsetStart="72dp"
                 app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
             </android.support.v7.widget.Toolbar>
