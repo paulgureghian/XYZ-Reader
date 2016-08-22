@@ -54,7 +54,6 @@ public class ArticleListActivity extends AppCompatActivity implements
             }
         }
 
-
         mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh_layout);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
@@ -62,7 +61,20 @@ public class ArticleListActivity extends AppCompatActivity implements
 
         if (savedInstanceState == null) {
             refresh();
+
+        mSwipeRefreshLayout.setRefreshing(false);
         }
+
+    mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener(){
+        @Override
+        public void onRefresh() {
+            refresh();
+        }
+    });
+
+
+
+
     }
     private void refresh() {
         startService(new Intent(this, UpdaterService.class));

@@ -9,6 +9,7 @@
     android:clickable="true"
     android:focusable="true"
     android:foreground="?selectableItemBackground"
+    app:cardUseCompatPadding="true"
     app:cardBackgroundColor="#84FFFF">
 
     <LinearLayout
