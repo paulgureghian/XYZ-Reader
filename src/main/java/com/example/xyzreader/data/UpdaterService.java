@@ -46,19 +46,19 @@ public class UpdaterService extends IntentService {
         sendStickyBroadcast(
                 new Intent(BROADCAST_ACTION_STATE_CHANGE).putExtra(EXTRA_REFRESHING, true));
 
-        // Don't even inspect the intent, we only do one thing, and that's fetch content.
         ArrayList<ContentProviderOperation> cpo = new ArrayList<ContentProviderOperation>();
 
         Uri dirUri = ItemsContract.Items.buildDirUri();
 
-        // Delete all items
         cpo.add(ContentProviderOperation.newDelete(dirUri).build());
 
         try {
             JSONArray array = RemoteEndpointUtil.fetchJsonArray();
             if (array == null) {
-                throw new JSONException("Invalid parsed item array" );
+
+                throw new JSONException("Invalid parsed item array");
             }
+            Log.e(TAG, array.toString());
 
             for (int i = 0; i < 16; i++) {
                 ContentValues values = new ContentValues();

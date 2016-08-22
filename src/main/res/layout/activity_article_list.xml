@@ -61,6 +61,6 @@
         app:elevation="6dp"
         app:fabSize="normal"
         app:layout_anchorGravity="bottom|right|end"
-        app:pressedTranslationZ="12dp" />
+        app:pressedTranslationZ="12dp"/>
 
 </android.support.design.widget.CoordinatorLayout>

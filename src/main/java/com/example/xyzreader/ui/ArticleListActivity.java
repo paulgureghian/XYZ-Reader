@@ -10,6 +10,7 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBar;
 
@@ -20,6 +21,7 @@ import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.text.format.DateUtils;
 
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -48,6 +50,11 @@ public class ArticleListActivity extends AppCompatActivity implements
 
         coordinatorLayout = (CoordinatorLayout) findViewById(R.id.main_coordinator_layout);
         floatingActionButton = (FloatingActionButton)findViewById(R.id.fab);
+
+        Snackbar.make(coordinatorLayout, "Welcome to XYZ Reader", Snackbar.LENGTH_LONG).show();
+
+
+
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
 
@@ -104,6 +111,7 @@ public class ArticleListActivity extends AppCompatActivity implements
         public void onReceive(Context context, Intent intent) {
             if (UpdaterService.BROADCAST_ACTION_STATE_CHANGE.equals(intent.getAction())) {
                 mIsRefreshing = intent.getBooleanExtra(UpdaterService.EXTRA_REFRESHING, false);
+                Log.e("is refreshing", mIsRefreshing+"");
                 updateRefreshingUI();
             }
         }
