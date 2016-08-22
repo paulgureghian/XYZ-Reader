@@ -4,7 +4,7 @@
     api-level="23"
     density="xhdpi"
     format="7"
-    timestamp="19603009466416"
+    timestamp="20906491869583"
     token="-2402183947609098123" >
 
     <task
@@ -36,7 +36,7 @@
             location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
             type="DEX" />
     </build>
-    <build timestamp="19603009466416" >
+    <build timestamp="20906491869583" >
         <artifact
             location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\res\resources-debug.ap_"
             type="RESOURCES" />
