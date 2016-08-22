@@ -8,6 +8,8 @@ import android.content.IntentFilter;
 import android.content.Loader;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBar;
 
@@ -36,11 +38,16 @@ public class ArticleListActivity extends AppCompatActivity implements
     private Toolbar mToolbar;
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private RecyclerView mRecyclerView;
+    private CoordinatorLayout coordinatorLayout;
+    private FloatingActionButton floatingActionButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article_list);
+
+        coordinatorLayout = (CoordinatorLayout) findViewById(R.id.main_coordinator_layout);
+        floatingActionButton = (FloatingActionButton)findViewById(R.id.fab);
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
 
@@ -62,20 +69,17 @@ public class ArticleListActivity extends AppCompatActivity implements
         if (savedInstanceState == null) {
             refresh();
 
-        mSwipeRefreshLayout.setRefreshing(false);
+            mSwipeRefreshLayout.setRefreshing(false);
         }
 
-    mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener(){
-        @Override
-        public void onRefresh() {
-            refresh();
-        }
-    });
-
-
-
-
+        mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                refresh();
+            }
+        });
     }
+
     private void refresh() {
         startService(new Intent(this, UpdaterService.class));
     }
@@ -86,11 +90,13 @@ public class ArticleListActivity extends AppCompatActivity implements
         registerReceiver(mRefreshingReceiver,
                 new IntentFilter(UpdaterService.BROADCAST_ACTION_STATE_CHANGE));
     }
+
     @Override
     protected void onStop() {
         super.onStop();
         unregisterReceiver(mRefreshingReceiver);
     }
+
     private boolean mIsRefreshing = false;
 
     private BroadcastReceiver mRefreshingReceiver = new BroadcastReceiver() {
@@ -102,6 +108,7 @@ public class ArticleListActivity extends AppCompatActivity implements
             }
         }
     };
+
     private void updateRefreshingUI() {
         mSwipeRefreshLayout.setRefreshing(mIsRefreshing);
     }
@@ -110,6 +117,7 @@ public class ArticleListActivity extends AppCompatActivity implements
     public Loader<Cursor> onCreateLoader(int i, Bundle bundle) {
         return ArticleLoader.newAllArticlesInstance(this);
     }
+
     @Override
     public void onLoadFinished(Loader<Cursor> cursorLoader, Cursor cursor) {
         Adapter adapter = new Adapter(cursor);
@@ -117,14 +125,11 @@ public class ArticleListActivity extends AppCompatActivity implements
         mRecyclerView.setAdapter(adapter);
         int columnCount = getResources().getInteger(R.integer.list_column_count);
 
-
         GridLayoutManager glm =
-                new GridLayoutManager(ArticleListActivity.this,2);
+                new GridLayoutManager(ArticleListActivity.this, 2);
         mRecyclerView.setLayoutManager(glm);
-
-
-
     }
+
     @Override
     public void onLoaderReset(Loader<Cursor> loader) {
         mRecyclerView.setAdapter(null);
@@ -142,6 +147,7 @@ public class ArticleListActivity extends AppCompatActivity implements
             mCursor.moveToPosition(position);
             return mCursor.getLong(ArticleLoader.Query._ID);
         }
+
         @Override
         public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             View view = getLayoutInflater().inflate(R.layout.list_item_article, parent, false);
@@ -155,6 +161,7 @@ public class ArticleListActivity extends AppCompatActivity implements
             });
             return vh;
         }
+
         @Override
         public void onBindViewHolder(ViewHolder holder, int position) {
             mCursor.moveToPosition(position);
@@ -169,11 +176,13 @@ public class ArticleListActivity extends AppCompatActivity implements
 
             Glide.with(ArticleListActivity.this).load(mCursor.getString(ArticleLoader.Query.THUMB_URL)).into(holder.thumbnailView);
         }
+
         @Override
         public int getItemCount() {
             return mCursor.getCount();
         }
     }
+
     public static class ViewHolder extends RecyclerView.ViewHolder {
         public ImageView thumbnailView;
         public TextView titleView;
@@ -181,7 +190,7 @@ public class ArticleListActivity extends AppCompatActivity implements
 
         public ViewHolder(View view) {
             super(view);
-            thumbnailView = (ImageView)view.findViewById(R.id.thumbnail);
+            thumbnailView = (ImageView) view.findViewById(R.id.thumbnail);
             titleView = (TextView) view.findViewById(R.id.article_title);
             subtitleView = (TextView) view.findViewById(R.id.article_subtitle);
         }
