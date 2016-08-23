@@ -23,6 +23,9 @@ import java.util.ArrayList;
 public class UpdaterService extends IntentService {
     private static final String TAG = "UpdaterService";
 
+    public static final String BROADCAST_ACTION_ERROR_NETWORK
+            = "com.example.xyzreader.intent.action.ERROR_NETWORK";
+
     public static final String BROADCAST_ACTION_STATE_CHANGE
             = "com.example.xyzreader.intent.action.STATE_CHANGE";
     public static final String EXTRA_REFRESHING
@@ -43,7 +46,7 @@ public class UpdaterService extends IntentService {
             return;
         }
 
-        sendStickyBroadcast(
+        sendBroadcast(
                 new Intent(BROADCAST_ACTION_STATE_CHANGE).putExtra(EXTRA_REFRESHING, true));
 
         ArrayList<ContentProviderOperation> cpo = new ArrayList<ContentProviderOperation>();
@@ -81,7 +84,7 @@ public class UpdaterService extends IntentService {
             Log.e(TAG, "Error updating content.", e);
         }
 
-        sendStickyBroadcast(
+        sendBroadcast(
                 new Intent(BROADCAST_ACTION_STATE_CHANGE).putExtra(EXTRA_REFRESHING, false));
     }
 }

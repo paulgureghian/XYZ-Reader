@@ -22,6 +22,7 @@ import android.support.v7.widget.Toolbar;
 import android.text.format.DateUtils;
 
 import android.util.Log;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -41,7 +42,6 @@ public class ArticleListActivity extends AppCompatActivity implements
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private RecyclerView mRecyclerView;
     private CoordinatorLayout coordinatorLayout;
-    private FloatingActionButton floatingActionButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,12 +49,11 @@ public class ArticleListActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_article_list);
 
         coordinatorLayout = (CoordinatorLayout) findViewById(R.id.main_coordinator_layout);
-        floatingActionButton = (FloatingActionButton)findViewById(R.id.fab);
-
-        Snackbar.make(coordinatorLayout, "Welcome to XYZ Reader", Snackbar.LENGTH_LONG).show();
-
-
-
+        Snackbar snackbar =  Snackbar.make(coordinatorLayout, "Welcome to XYZ Reader", Snackbar.LENGTH_LONG);
+        snackbar.show();
+        View view = snackbar.getView();
+        TextView txtv = (TextView) view.findViewById(android.support.design.R.id.snackbar_text);
+        txtv.setGravity(Gravity.CENTER_HORIZONTAL);
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
 
@@ -95,7 +94,7 @@ public class ArticleListActivity extends AppCompatActivity implements
     protected void onStart() {
         super.onStart();
         registerReceiver(mRefreshingReceiver,
-                new IntentFilter(UpdaterService.BROADCAST_ACTION_STATE_CHANGE));
+                new IntentFilter(UpdaterService.BROADCAST_ACTION_ERROR_NETWORK));
     }
 
     @Override
@@ -110,6 +109,10 @@ public class ArticleListActivity extends AppCompatActivity implements
         @Override
         public void onReceive(Context context, Intent intent) {
             if (UpdaterService.BROADCAST_ACTION_STATE_CHANGE.equals(intent.getAction())) {
+
+
+
+
                 mIsRefreshing = intent.getBooleanExtra(UpdaterService.EXTRA_REFRESHING, false);
                 Log.e("is refreshing", mIsRefreshing+"");
                 updateRefreshingUI();
