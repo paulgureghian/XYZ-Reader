@@ -45,11 +45,9 @@ public class UpdaterService extends IntentService {
         if (ni == null || !ni.isConnected()) {
 
             sendBroadcast(new Intent(BROADCAST_ACTION_ERROR_NETWORK));
-
             Log.w(TAG, "Not online, not refreshing.");
             return;
         }
-
         sendBroadcast(
                 new Intent(BROADCAST_ACTION_STATE_CHANGE).putExtra(EXTRA_REFRESHING, true));
 
@@ -84,13 +82,11 @@ public class UpdaterService extends IntentService {
                 values.put(ItemsContract.Items.PUBLISHED_DATE, time.toMillis(false));
                 cpo.add(ContentProviderOperation.newInsert(dirUri).withValues(values).build());
             }
-
             getContentResolver().applyBatch(ItemsContract.CONTENT_AUTHORITY, cpo);
 
         } catch (JSONException | RemoteException | OperationApplicationException e) {
             Log.e(TAG, "Error updating content.", e);
         }
-
         sendBroadcast(
                 new Intent(BROADCAST_ACTION_STATE_CHANGE).putExtra(EXTRA_REFRESHING, false));
     }
