@@ -93,8 +93,12 @@ public class ArticleListActivity extends AppCompatActivity implements
     @Override
     protected void onStart() {
         super.onStart();
-        registerReceiver(mRefreshingReceiver,
-                new IntentFilter(UpdaterService.BROADCAST_ACTION_STATE_CHANGE));
+
+        IntentFilter intentFilter = new IntentFilter();
+        intentFilter.addAction(UpdaterService.BROADCAST_ACTION_STATE_CHANGE);
+        intentFilter.addAction(UpdaterService.BROADCAST_ACTION_ERROR_NETWORK);
+
+        registerReceiver(mRefreshingReceiver,intentFilter);
 
     }
 
@@ -122,6 +126,15 @@ public class ArticleListActivity extends AppCompatActivity implements
 
                     Snackbar snackbar = Snackbar.make(coordinatorLayout,"No connection availble", Snackbar.LENGTH_LONG);
                     snackbar.show();
+
+                    View view = snackbar.getView();
+                    TextView txtv = (TextView) view.findViewById(android.support.design.R.id.snackbar_text);
+                    txtv.setGravity(Gravity.CENTER_HORIZONTAL);
+
+
+
+
+
                 }
 
 

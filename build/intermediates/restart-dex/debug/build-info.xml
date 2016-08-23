@@ -4,37 +4,45 @@
     api-level="23"
     density="xhdpi"
     format="7"
-    timestamp="15394475352225"
-    token="-2402183947609098123" >
+    timestamp="23559321264765"
+    token="-2402183947609098123"
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="485" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="788" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="84" />
     <task
         name="verifier"
-        duration="0" />
+        duration="15" />
 
-    <build timestamp="391282349388" >
+    <artifact
+        location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\reload-dex\debug\classes.dex"
+        type="RELOAD_DEX" />
+
+    <build timestamp="21204563264595" >
         <artifact
             location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\outputs\apk\XYZReader-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="15130794960389"
-        verifier="METHOD_ADDED" >
+        timestamp="23476224469710"
+        verifier="COMPATIBLE" >
         <artifact
-            location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
-            type="DEX" />
+            location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\builds\debug\23476224469710\classes.dex"
+            type="RELOAD_DEX" />
     </build>
-    <build timestamp="15394475352225" />
+    <build
+        timestamp="23559321264765"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\reload-dex\debug\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
 
 </instant-run>
