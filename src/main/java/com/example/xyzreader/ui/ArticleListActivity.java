@@ -95,7 +95,7 @@ public class ArticleListActivity extends AppCompatActivity implements
         super.onStart();
         registerReceiver(mRefreshingReceiver,
                 new IntentFilter(UpdaterService.BROADCAST_ACTION_STATE_CHANGE));
-                new IntentFilter(UpdaterService.BROADCAST_ACTION_ERROR_NETWORK);
+
     }
 
     @Override
@@ -114,6 +114,17 @@ public class ArticleListActivity extends AppCompatActivity implements
                 mIsRefreshing = intent.getBooleanExtra(UpdaterService.EXTRA_REFRESHING, false);
                 Log.e("is refreshing", mIsRefreshing + "");
                 updateRefreshingUI();
+
+
+            }else {
+
+                if (UpdaterService.BROADCAST_ACTION_ERROR_NETWORK.equals(intent.getAction())) {
+
+                    Snackbar snackbar = Snackbar.make(coordinatorLayout,"No connection availble", Snackbar.LENGTH_LONG);
+                    snackbar.show();
+                }
+
+
             }
         }
     };

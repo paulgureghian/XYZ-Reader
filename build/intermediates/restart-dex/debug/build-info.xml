@@ -4,26 +4,21 @@
     api-level="23"
     density="xhdpi"
     format="7"
-    timestamp="12729763366481"
-    token="-2402183947609098123"
-    verifier="COMPATIBLE" >
+    timestamp="15394475352225"
+    token="-2402183947609098123" >
 
     <task
         name="javac"
-        duration="2865" />
+        duration="0" />
     <task
         name="instant-run-dex"
-        duration="1135" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="274" />
+        duration="0" />
     <task
         name="verifier"
-        duration="108" />
-
-    <artifact
-        location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\reload-dex\debug\classes.dex"
-        type="RELOAD_DEX" />
+        duration="0" />
 
     <build timestamp="391282349388" >
         <artifact
@@ -31,11 +26,15 @@
             type="MAIN" />
     </build>
     <build
-        timestamp="12729763366481"
-        verifier="COMPATIBLE" >
+        timestamp="15130794960389"
+        verifier="METHOD_ADDED" >
         <artifact
-            location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\reload-dex\debug\classes.dex"
-            type="RELOAD_DEX" />
+            location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
+            type="DEX" />
+        <artifact
+            location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
+            type="DEX" />
     </build>
+    <build timestamp="15394475352225" />
 
 </instant-run>
