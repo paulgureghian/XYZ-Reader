@@ -49,7 +49,7 @@ public class ArticleListActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_article_list);
 
         coordinatorLayout = (CoordinatorLayout) findViewById(R.id.main_coordinator_layout);
-        Snackbar snackbar =  Snackbar.make(coordinatorLayout, "Welcome to XYZ Reader", Snackbar.LENGTH_LONG);
+        Snackbar snackbar = Snackbar.make(coordinatorLayout, "Welcome to XYZ Reader", Snackbar.LENGTH_LONG);
         snackbar.show();
         View view = snackbar.getView();
         TextView txtv = (TextView) view.findViewById(android.support.design.R.id.snackbar_text);
@@ -94,7 +94,8 @@ public class ArticleListActivity extends AppCompatActivity implements
     protected void onStart() {
         super.onStart();
         registerReceiver(mRefreshingReceiver,
-                new IntentFilter(UpdaterService.BROADCAST_ACTION_ERROR_NETWORK));
+                new IntentFilter(UpdaterService.BROADCAST_ACTION_STATE_CHANGE));
+                new IntentFilter(UpdaterService.BROADCAST_ACTION_ERROR_NETWORK);
     }
 
     @Override
@@ -110,11 +111,8 @@ public class ArticleListActivity extends AppCompatActivity implements
         public void onReceive(Context context, Intent intent) {
             if (UpdaterService.BROADCAST_ACTION_STATE_CHANGE.equals(intent.getAction())) {
 
-
-
-
                 mIsRefreshing = intent.getBooleanExtra(UpdaterService.EXTRA_REFRESHING, false);
-                Log.e("is refreshing", mIsRefreshing+"");
+                Log.e("is refreshing", mIsRefreshing + "");
                 updateRefreshingUI();
             }
         }
