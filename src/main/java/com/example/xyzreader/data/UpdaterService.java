@@ -51,9 +51,6 @@ public class UpdaterService extends IntentService {
         sendBroadcast(
                 new Intent(BROADCAST_ACTION_STATE_CHANGE).putExtra(EXTRA_REFRESHING, true));
 
-        sendBroadcast(
-                new Intent(BROADCAST_ACTION_ERROR_NETWORK));
-
         ArrayList<ContentProviderOperation> cpo = new ArrayList<ContentProviderOperation>();
 
         Uri dirUri = ItemsContract.Items.buildDirUri();

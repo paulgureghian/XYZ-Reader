@@ -4,22 +4,22 @@
     api-level="23"
     density="xhdpi"
     format="7"
-    timestamp="23559321264765"
+    timestamp="28779152694340"
     token="-2402183947609098123"
     verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="485" />
+        duration="476" />
     <task
         name="instant-run-dex"
-        duration="788" />
+        duration="488" />
     <task
         name="instant-run-transform"
-        duration="84" />
+        duration="25" />
     <task
         name="verifier"
-        duration="15" />
+        duration="3" />
 
     <artifact
         location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\reload-dex\debug\classes.dex"
@@ -39,6 +39,20 @@
     </build>
     <build
         timestamp="23559321264765"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\builds\debug\23559321264765\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="26643544920504"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\builds\debug\26643544920504\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="28779152694340"
         verifier="COMPATIBLE" >
         <artifact
             location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\reload-dex\debug\classes.dex"

@@ -112,7 +112,7 @@ public class ArticleListActivity extends AppCompatActivity implements
             }else {
                 if (UpdaterService.BROADCAST_ACTION_ERROR_NETWORK.equals(intent.getAction())) {
 
-                    Snackbar snackbar = Snackbar.make(coordinatorLayout,"No connection availble", Snackbar.LENGTH_LONG);
+                    Snackbar snackbar = Snackbar.make(coordinatorLayout,"No connection availble", Snackbar.LENGTH_INDEFINITE);
                     snackbar.show();
 
                     View view = snackbar.getView();
