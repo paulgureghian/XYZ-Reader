@@ -1,5 +1,5 @@
-<slide xmlns:android="http://schemas.android.com/apk/res/">
+<slide xmlns:android="http://schemas.android.com/apk/res/"
 
-    android:duration="100"/>
+    android:duration="1000">
 
 </slide>

@@ -1,5 +1,5 @@
-<fade xmlns:android="http://schemas.android.com/apk/res/">
+<fade xmlns:android="http://schemas.android.com/apk/res/"
 
-    android:duration="100"/>
+    android:duration="1000">
 
 </fade>
