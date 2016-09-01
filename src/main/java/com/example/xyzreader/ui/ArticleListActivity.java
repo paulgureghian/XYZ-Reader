@@ -50,7 +50,7 @@ public class ArticleListActivity extends AppCompatActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article_list);
-        setupWindowAnimations();
+
         coordinatorLayout = (CoordinatorLayout) findViewById(R.id.main_coordinator_layout);
 
         Snackbar snackbar = Snackbar.make(coordinatorLayout, "Welcome to XYZ Reader", Snackbar.LENGTH_LONG);
@@ -86,9 +86,11 @@ public class ArticleListActivity extends AppCompatActivity implements
             }
         });
     }
+
     private void refresh() {
         startService(new Intent(this, UpdaterService.class));
     }
+
     @Override
     protected void onStart() {
         super.onStart();
@@ -96,13 +98,15 @@ public class ArticleListActivity extends AppCompatActivity implements
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction(UpdaterService.BROADCAST_ACTION_STATE_CHANGE);
         intentFilter.addAction(UpdaterService.BROADCAST_ACTION_ERROR_NETWORK);
-        registerReceiver(mRefreshingReceiver,intentFilter);
+        registerReceiver(mRefreshingReceiver, intentFilter);
     }
+
     @Override
     protected void onStop() {
         super.onStop();
         unregisterReceiver(mRefreshingReceiver);
     }
+
     private boolean mIsRefreshing = false;
 
     private BroadcastReceiver mRefreshingReceiver = new BroadcastReceiver() {
@@ -113,10 +117,10 @@ public class ArticleListActivity extends AppCompatActivity implements
                 mIsRefreshing = intent.getBooleanExtra(UpdaterService.EXTRA_REFRESHING, false);
                 Log.e("is refreshing", mIsRefreshing + "");
                 updateRefreshingUI();
-            }else {
+            } else {
                 if (UpdaterService.BROADCAST_ACTION_ERROR_NETWORK.equals(intent.getAction())) {
 
-                    Snackbar snackbar = Snackbar.make(coordinatorLayout,"No connection availble", Snackbar.LENGTH_INDEFINITE);
+                    Snackbar snackbar = Snackbar.make(coordinatorLayout, "No connection availble", Snackbar.LENGTH_INDEFINITE);
                     snackbar.show();
 
                     View view = snackbar.getView();
@@ -126,13 +130,16 @@ public class ArticleListActivity extends AppCompatActivity implements
             }
         }
     };
+
     private void updateRefreshingUI() {
         mSwipeRefreshLayout.setRefreshing(mIsRefreshing);
     }
+
     @Override
     public Loader<Cursor> onCreateLoader(int i, Bundle bundle) {
         return ArticleLoader.newAllArticlesInstance(this);
     }
+
     @Override
     public void onLoadFinished(Loader<Cursor> cursorLoader, Cursor cursor) {
         Adapter adapter = new Adapter(cursor);
@@ -144,6 +151,7 @@ public class ArticleListActivity extends AppCompatActivity implements
                 new GridLayoutManager(ArticleListActivity.this, 2);
         mRecyclerView.setLayoutManager(glm);
     }
+
     @Override
     public void onLoaderReset(Loader<Cursor> loader) {
         mRecyclerView.setAdapter(null);
@@ -151,14 +159,17 @@ public class ArticleListActivity extends AppCompatActivity implements
 
     private class Adapter extends RecyclerView.Adapter<ViewHolder> {
         private Cursor mCursor;
+
         public Adapter(Cursor cursor) {
             mCursor = cursor;
         }
+
         @Override
         public long getItemId(int position) {
             mCursor.moveToPosition(position);
             return mCursor.getLong(ArticleLoader.Query._ID);
         }
+
         @Override
         public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             View view = getLayoutInflater().inflate(R.layout.list_item_article, parent, false);
@@ -175,6 +186,7 @@ public class ArticleListActivity extends AppCompatActivity implements
             });
             return vh;
         }
+
         @Override
         public void onBindViewHolder(ViewHolder holder, int position) {
             mCursor.moveToPosition(position);
@@ -189,11 +201,13 @@ public class ArticleListActivity extends AppCompatActivity implements
 
             Glide.with(ArticleListActivity.this).load(mCursor.getString(ArticleLoader.Query.THUMB_URL)).into(holder.thumbnailView);
         }
+
         @Override
         public int getItemCount() {
             return mCursor.getCount();
         }
     }
+
     public static class ViewHolder extends RecyclerView.ViewHolder {
         public ImageView thumbnailView;
         public TextView titleView;
@@ -206,9 +220,5 @@ public class ArticleListActivity extends AppCompatActivity implements
             subtitleView = (TextView) view.findViewById(R.id.article_subtitle);
         }
     }
-    private void setupWindowAnimations() {
-
-        Slide slide = (Slide) TransitionInflater.from(this).inflateTransition(R.transition.activity_slide);
-        getWindow().setExitTransition(slide);
-    }
 }
+

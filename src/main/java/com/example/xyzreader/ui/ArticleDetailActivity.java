@@ -65,6 +65,7 @@ public class ArticleDetailActivity extends ActionBarActivity
                 super.onPageScrollStateChanged(state);
 
             }
+
             @Override
             public void onPageSelected(int position) {
                 if (mCursor != null) {
@@ -78,7 +79,7 @@ public class ArticleDetailActivity extends ActionBarActivity
         mUpButtonContainer = findViewById(R.id.up_container);
         mUpButton = findViewById(R.id.action_up);
 
-        mUpButton.setOnClickListener(new View.OnClickListener(){
+        mUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onSupportNavigateUp();
@@ -96,10 +97,12 @@ public class ArticleDetailActivity extends ActionBarActivity
             }
         }
     }
+
     @Override
     public Loader<Cursor> onCreateLoader(int i, Bundle bundle) {
         return ArticleLoader.newAllArticlesInstance(this);
     }
+
     @Override
     public void onLoadFinished(Loader<Cursor> cursorLoader, Cursor cursor) {
         mCursor = cursor;
@@ -119,19 +122,23 @@ public class ArticleDetailActivity extends ActionBarActivity
             mStartId = 0;
         }
     }
+
     @Override
     public void onLoaderReset(Loader<Cursor> cursorLoader) {
         mCursor = null;
         mPagerAdapter.notifyDataSetChanged();
     }
+
     public void onUpButtonFloorChanged(long itemId, ArticleDetailFragment fragment) {
         if (itemId == mSelectedItemId) {
             mSelectedItemUpButtonFloor = fragment.getUpButtonFloor();
             updateUpButtonPosition();
         }
     }
+
     private void updateUpButtonPosition() {
     }
+
     private class MyPagerAdapter extends FragmentStatePagerAdapter {
         public MyPagerAdapter(FragmentManager fm) {
             super(fm);
@@ -146,25 +153,21 @@ public class ArticleDetailActivity extends ActionBarActivity
                 updateUpButtonPosition();
             }
         }
+
         @Override
         public Fragment getItem(int position) {
             mCursor.moveToPosition(position);
             return ArticleDetailFragment.newInstance(mCursor.getLong(ArticleLoader.Query._ID));
         }
+
         @Override
         public int getCount() {
             return (mCursor != null) ? mCursor.getCount() : 0;
         }
     }
 
-        private void setupWindowAnimations() {
+    private void setupWindowAnimations() {
 
-            Fade fade = (Fade) TransitionInflater.from(this).inflateTransition(R.transition.activity_fade);
-
-            getWindow().setEnterTransition(fade);
-
-            ActivityCompat.postponeEnterTransition(this);
-
-
-        }
+        ActivityCompat.postponeEnterTransition(this);
+    }
 }
