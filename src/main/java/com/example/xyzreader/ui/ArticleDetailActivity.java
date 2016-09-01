@@ -168,6 +168,10 @@ public class ArticleDetailActivity extends ActionBarActivity
 
     private void setupWindowAnimations() {
 
+        Fade fade = new Fade();
+        fade.setDuration(3000);
+        getWindow().setEnterTransition(fade);
+
         ActivityCompat.postponeEnterTransition(this);
     }
 }

@@ -50,10 +50,10 @@ public class ArticleListActivity extends AppCompatActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article_list);
-
+        setupWindowAnimations();
         coordinatorLayout = (CoordinatorLayout) findViewById(R.id.main_coordinator_layout);
 
-        Snackbar snackbar = Snackbar.make(coordinatorLayout, "Welcome to XYZ Reader", Snackbar.LENGTH_LONG);
+        Snackbar snackbar = Snackbar.make(coordinatorLayout, "Welcome to XYZ Reader", Snackbar.LENGTH_SHORT);
         snackbar.show();
         View view = snackbar.getView();
         TextView txtv = (TextView) view.findViewById(android.support.design.R.id.snackbar_text);
@@ -220,5 +220,13 @@ public class ArticleListActivity extends AppCompatActivity implements
             subtitleView = (TextView) view.findViewById(R.id.article_subtitle);
         }
     }
+
+
+        private void setupWindowAnimations() {
+
+            Slide slide = new Slide();
+            slide.setDuration(3000);
+            getWindow().setExitTransition(slide);
+        }
 }
 
