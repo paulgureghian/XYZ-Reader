@@ -21,6 +21,8 @@ import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.text.format.DateUtils;
 
+import android.transition.Slide;
+import android.transition.TransitionInflater;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -47,8 +49,9 @@ public class ArticleListActivity extends AppCompatActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article_list);
-
+        setupWindowAnimations();
         coordinatorLayout = (CoordinatorLayout) findViewById(R.id.main_coordinator_layout);
+
         Snackbar snackbar = Snackbar.make(coordinatorLayout, "Welcome to XYZ Reader", Snackbar.LENGTH_LONG);
         snackbar.show();
         View view = snackbar.getView();
@@ -198,5 +201,10 @@ public class ArticleListActivity extends AppCompatActivity implements
             titleView = (TextView) view.findViewById(R.id.article_title);
             subtitleView = (TextView) view.findViewById(R.id.article_subtitle);
         }
+    }
+    private void setupWindowAnimations() {
+
+        Slide slide = (Slide) TransitionInflater.from(this).inflateTransition(R.transition.activity_slide);
+        getWindow().setExitTransition(slide);
     }
 }

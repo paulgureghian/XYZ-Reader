@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\res\\merged\\debug\\transition\\activity_slide.xml",
+        "source": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\src\\main\\res\\transition\\activity_slide.xml"
+    },
+    {
+        "merged": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\build\\intermediates\\res\\merged\\debug\\transition\\activity_fade.xml",
+        "source": "C:\\Users\\Paul\\AndroidStudioProjects\\XYZReader\\src\\main\\res\\transition\\activity_fade.xml"
+    }
+]

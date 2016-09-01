@@ -14,6 +14,8 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.transition.Fade;
+import android.transition.TransitionInflater;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,7 +49,7 @@ public class ArticleDetailActivity extends ActionBarActivity
                             View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
         }
         setContentView(R.layout.activity_article_detail);
-
+        setupWindowAnimations();
         getLoaderManager().initLoader(0, null, this);
         mPagerAdapter = new MyPagerAdapter(getFragmentManager());
         mPager = (ViewPager) findViewById(R.id.pager);
@@ -81,22 +83,6 @@ public class ArticleDetailActivity extends ActionBarActivity
                 onSupportNavigateUp();
             }
         });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
 
@@ -169,4 +155,14 @@ public class ArticleDetailActivity extends ActionBarActivity
             return (mCursor != null) ? mCursor.getCount() : 0;
         }
     }
+
+        private void setupWindowAnimations() {
+
+            Fade fade = (Fade) TransitionInflater.from(this).inflateTransition(R.transition.activity_fade);
+            getWindow().setEnterTransition(fade);
+
+
+
+
+        }
 }
