@@ -82,7 +82,8 @@ public class ArticleDetailActivity extends ActionBarActivity
         mUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onSupportNavigateUp();
+                //onSupportNavigateUp();
+                onBackPressed();
             }
         });
 
@@ -170,7 +171,10 @@ public class ArticleDetailActivity extends ActionBarActivity
 
         Fade fade = new Fade();
         fade.setDuration(3000);
+
         getWindow().setEnterTransition(fade);
+        getWindow().setReturnTransition(fade);
+
 
         ActivityCompat.postponeEnterTransition(this);
     }

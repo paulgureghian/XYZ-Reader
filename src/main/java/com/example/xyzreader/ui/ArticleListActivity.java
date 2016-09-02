@@ -221,12 +221,14 @@ public class ArticleListActivity extends AppCompatActivity implements
         }
     }
 
+    private void setupWindowAnimations() {
 
-        private void setupWindowAnimations() {
+        Slide slide = new Slide();
+        slide.setDuration(3000);
 
-            Slide slide = new Slide();
-            slide.setDuration(3000);
-            getWindow().setExitTransition(slide);
-        }
+        getWindow().setExitTransition(slide);
+        getWindow().setReenterTransition(slide);
+
+    }
 }
 

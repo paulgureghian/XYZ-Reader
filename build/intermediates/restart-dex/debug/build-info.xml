@@ -4,30 +4,115 @@
     api-level="23"
     density="xhdpi"
     format="7"
-    timestamp="770299021065"
-    token="-2402183947609098123" >
+    timestamp="7388558479248"
+    token="-2402183947609098123"
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="2469" />
+        duration="515" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="814" />
     <task
         name="instant-run-transform"
-        duration="764" />
+        duration="75" />
     <task
         name="verifier"
-        duration="203" />
+        duration="14" />
 
     <artifact
-        location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\outputs\apk\XYZReader-debug.apk"
-        type="MAIN" />
+        location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\reload-dex\debug\classes.dex"
+        type="RELOAD_DEX" />
 
     <build timestamp="770299021065" >
         <artifact
             location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\outputs\apk\XYZReader-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="2223444679075"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\builds\debug\2223444679075\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="2444878573484"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\builds\debug\2444878573484\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="2501283762391"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\builds\debug\2501283762391\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="2646409645804"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\builds\debug\2646409645804\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="2661377079226"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\builds\debug\2661377079226\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="2684795154641"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\builds\debug\2684795154641\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="3858685359689"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\builds\debug\3858685359689\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="3888616167846"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\builds\debug\3888616167846\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="3912935860020"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\builds\debug\3912935860020\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="5249033481055"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\builds\debug\5249033481055\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="5589420510883"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\builds\debug\5589420510883\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="7388558479248"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\reload-dex\debug\classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

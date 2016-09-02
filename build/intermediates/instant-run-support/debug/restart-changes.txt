@@ -1,0 +1,4 @@
+CHANGED,C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\transforms\instantRun\debug\folders\1\5\main\com\example\xyzreader\ui\ArticleDetailActivity.class
+CHANGED,C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\transforms\instantRun\debug\folders\1\5\main\com\example\xyzreader\ui\ArticleDetailActivity$MyPagerAdapter.class
+CHANGED,C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\transforms\instantRun\debug\folders\1\5\main\com\example\xyzreader\ui\ArticleListActivity.class
+CHANGED,C:\Users\Paul\AndroidStudioProjects\XYZReader\build\intermediates\transforms\instantRun\debug\folders\1\5\main\com\example\xyzreader\ui\ArticleDetailActivity$2.class
