@@ -22,6 +22,7 @@ import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.text.format.DateUtils;
 
+import android.transition.Explode;
 import android.transition.Slide;
 import android.transition.TransitionInflater;
 import android.util.Log;
@@ -180,8 +181,6 @@ public class ArticleListActivity extends AppCompatActivity implements
 
                     Intent intent = new Intent(Intent.ACTION_VIEW, ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition())));
                     startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(ArticleListActivity.this).toBundle());
-
-
                 }
             });
             return vh;
@@ -227,8 +226,6 @@ public class ArticleListActivity extends AppCompatActivity implements
         slide.setDuration(3000);
 
         getWindow().setExitTransition(slide);
-        getWindow().setReenterTransition(slide);
-
     }
 }
 

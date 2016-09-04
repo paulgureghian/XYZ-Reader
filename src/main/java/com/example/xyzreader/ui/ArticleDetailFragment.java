@@ -42,8 +42,8 @@ import com.example.xyzreader.data.ArticleLoader;
 
 public class ArticleDetailFragment extends Fragment implements
         LoaderManager.LoaderCallbacks<Cursor> {
-    private static final String TAG = "ArticleDetailFragment";
 
+    private static final String TAG = "ArticleDetailFragment";
     public static final String ARG_ITEM_ID = "item_id";
     private static final float PARALLAX_FACTOR = 1.25f;
 
@@ -116,14 +116,11 @@ public class ArticleDetailFragment extends Fragment implements
         mCollapsingToolbar.setExpandedTitleColor(getResources().getColor(android.R.color.transparent));
         mCollapsingToolbar.isTitleEnabled();
 
-
         {
 
         }
 
-
         mPhotoView = (ImageView) mRootView.findViewById(R.id.photo);
-
 
         mStatusBarColorDrawable = new ColorDrawable(0);
 
@@ -195,9 +192,7 @@ public class ArticleDetailFragment extends Fragment implements
                             + "</font>"));
             bodyView.setText(Html.fromHtml(mCursor.getString(ArticleLoader.Query.BODY)));
 
-
             Glide.with(getActivity()).load(mCursor.getString(ArticleLoader.Query.THUMB_URL)).into(mPhotoView);
-
 
         } else {
             mRootView.setVisibility(View.GONE);
@@ -206,21 +201,15 @@ public class ArticleDetailFragment extends Fragment implements
             bodyView.setText("N/A");
         }
 
-    mRootView.getViewTreeObserver().addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener() {
-        @Override
-        public boolean onPreDraw() {
-            mRootView.getViewTreeObserver().removeOnPreDrawListener(this);
-            ActivityCompat.startPostponedEnterTransition(getActivity());
+        mRootView.getViewTreeObserver().addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener() {
+            @Override
+            public boolean onPreDraw() {
+                mRootView.getViewTreeObserver().removeOnPreDrawListener(this);
+                ActivityCompat.startPostponedEnterTransition(getActivity());
 
-            return true;
-
-
-
-        }
-    });
-
-
-
+                return true;
+            }
+        });
     }
 
     @Override
@@ -263,18 +252,15 @@ public class ArticleDetailFragment extends Fragment implements
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                getActivity().onBackPressed();
 
-
-            switch (item.getItemId()) {
-                case android.R.id.home:
-                    getActivity().onBackPressed();
-
-                    return true;
-            }
-
-                return super.onOptionsItemSelected(item);
-
-
-            }
+                return true;
         }
+
+        return super.onOptionsItemSelected(item);
+
+    }
+}
 

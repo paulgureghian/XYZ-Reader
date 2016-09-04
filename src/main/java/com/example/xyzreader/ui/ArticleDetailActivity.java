@@ -63,7 +63,6 @@ public class ArticleDetailActivity extends ActionBarActivity
             @Override
             public void onPageScrollStateChanged(int state) {
                 super.onPageScrollStateChanged(state);
-
             }
 
             @Override
@@ -88,9 +87,7 @@ public class ArticleDetailActivity extends ActionBarActivity
         });
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-
         }
-
         if (savedInstanceState == null) {
             if (getIntent() != null && getIntent().getData() != null) {
                 mStartId = ItemsContract.Items.getItemId(getIntent().getData());
@@ -173,8 +170,6 @@ public class ArticleDetailActivity extends ActionBarActivity
         fade.setDuration(3000);
 
         getWindow().setEnterTransition(fade);
-        getWindow().setReturnTransition(fade);
-
 
         ActivityCompat.postponeEnterTransition(this);
     }

@@ -1650,8 +1650,6 @@
         <item name="colorPrimaryDark">#4A148C</item>
         <item name="colorAccent">@color/theme_accent</item>
 
-        <item name="android:windowActivityTransitions">true</item>
-
     </style>
     <style name="Theme.Bacon.Detail">
         <item name="android:statusBarColor">@android:color/transparent</item>
