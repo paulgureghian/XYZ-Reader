@@ -1,2 +1,3 @@
 # XYZ-Reader
-This mock RSS feed reader uses Android Material Design Guidelines - "surfaces", "transitions", and "motion". 
+
+<img src="xyz main.png" width="200" height="200">
