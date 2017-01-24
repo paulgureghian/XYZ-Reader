@@ -4,5 +4,15 @@
 <img src="xyz detail.png" width="200" height="200">
 <img src="xyz detail1.png" width="200" height="200">
 
-#Libraries used:
-Glide
+Libraries used:
+# Glide
+# Support
+# Appcompat
+# Palette
+# Recyclerview
+# Cardview
+# Design
+# Okhttp
+# Volley
+
+The app uses CoordinatorLayout, SwipeRefreshLayout, CollapsingToolbarLayout
