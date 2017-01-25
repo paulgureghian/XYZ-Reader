@@ -15,5 +15,5 @@ Libraries used:
 # Okhttp
 # Volley
 
-The app uses CoordinatorLayout, SwipeRefreshLayout, CollapsingToolbarLayout: Exit and Enter transitions, and custom java image views. 
+The app uses CoordinatorLayout, SwipeRefreshLayout, CollapsingToolbarLayout: Exit and Enter transitions, and custom Java image views. 
 
